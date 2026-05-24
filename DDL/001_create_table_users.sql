@@ -1,0 +1,9 @@
+-- CREATE TABEL USER
+CREATE TABLE Users (
+    User_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Phone_number VARCHAR(20) NOT NULL UNIQUE,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    Role ENUM('seller', 'buyer', 'admin') NOT NULL
+);
